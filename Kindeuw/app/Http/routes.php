@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+/*
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
@@ -27,7 +27,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-
+*/
 Route::get('Kindeuw/create', 'KindeuwController@create');
 Route::get('Kindeuw', 'KindeuwController@index');
 Route::post('Kindeuw', 'KindeuwController@store');
@@ -37,3 +37,5 @@ Route::delete('Kindeuw/hapus/{id}',array(
 Route::get('Kindeuw/ubah/{id}', 'KindeuwController@edit');
 Route::put('Kindeuw/ubah/lagi/{id}',array(
         'uses' => 'KindeuwController@ubah', 'as' => 'Kindeuw'));
+Route::get('Kindeuw/About/About', 'KindeuwController@about');
+Route::get('Kindeuw/Contact/Contact', 'KindeuwController@kontak');

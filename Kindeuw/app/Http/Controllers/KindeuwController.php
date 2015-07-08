@@ -52,4 +52,12 @@ class KindeuwController extends Controller {
 
         return view('Kindeuw.Ubah', compact('edit'));
     }
+
+    public function about(){
+        return view('Kindeuw.About');
+    }
+
+    public function kontak(){
+        return view('Kindeuw.Contact');
+    }
 }
